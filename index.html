@@ -2,80 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-
-    <style>
-        :root {
-            --header-color: #9b4dca;
-            --header-textcolor: #fff;
-            --navigation-hover: #944bc3
-
-        }
-
-        .head {
-            width: 100%;
-            min-height: 240px;
-            background-color: var(--header-color);
-        }
-
-        .head span,
-        .head p,
-        .head h1,
-        .head h2,
-        .head h3,
-        .head h4,
-        .head h5,
-        .head h6 {
-            color: var(--header-textcolor);
-        }
-
-        .navigation {
-            text-align: right;
-        }
-
-        .head button:hover,
-        .head button:focus {
-            background-color: var(--navigation-hover);
-            border-color: var(--navigation-hover);
-        }
-
-        .header-container h1 {
-            font-weight: bold;
-
-        }
-
-        .header-container h2 {
-            font-weight: lighter;
-        }
-
-        .subtitle {
-            margin-top: -38px;
-        }
-
-        .socials {
-            margin-top: -10px;
-        }
-
-        .socials button > i {
-            font-size: 2rem;
-        }
-
-        @media (max-width: 670px) {
-            .header-container h1 {
-                font-size: 3.6rem;
-            }
-
-            .subtitle {
-                font-size: 2.6rem;
-                margin-top: -28px;
-            }
-
-            .socials {
-                display: none !important;
-            }
-        }
-
-    </style>
+    <title>Lucas Ouwens - Software Engineer</title>
 
     <!-- CDN links -->
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic" type="text/css">
@@ -85,8 +12,14 @@
     <link rel="stylesheet" href="vendor/milligram/milligram.min.css" type="text/css"/>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          type="text/css">
     <script src="https://kit.fontawesome.com/aa3b92cf7b.js" crossorigin="anonymous"></script>
+
+
+    <!-- style -->
+    <link rel="stylesheet" href="assets/style/index.css" type="text/css"/>
+
 </head>
 <body>
 <!-- Header for portfolio -->
@@ -114,11 +47,86 @@
         </div>
     </div>
 </div>
-
 <div class="body">
     <div class="container">
-
+        <div class="gallery-items">
+            <div class="scroll">
+                <button id="prev"><i class="fas fa-chevron-left"></i></button>
+                <button id="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+            <div class="row projects">
+                <div class="column column-50">
+                    <div class="gallery-item">
+                        <div class="row">
+                            <div class="column">
+                                <div class="project-title">
+                                    <h4>Github portfolio</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column column-80">
+                                <div class="project-description">
+                                    <p>Portfolio website built using the milligram CSS framework.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="project-tags">
+                                <div class="column column-80">
+                                    <button class="project-tag">HTML5</button>
+                                    <button class="project-tag">CSS3</button>
+                                    <button class="project-tag">milligram.io</button>
+                                    <button class="project-tag">JavaScript (ES6)</button>
+                                    <button class="project-tag">Font Awesome</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column column-50">
+                    <div class="gallery-item">
+                        <div class="row">
+                            <div class="column">
+                                <div class="project-title">
+                                    <h4>Github portfolio</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column column-80">
+                                <div class="project-description">
+                                    <p>Portfolio website built using the milligram CSS framework.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="project-tags">
+                                <div class="column column-80">
+                                    <button class="project-tag">HTML5</button>
+                                    <button class="project-tag">CSS3</button>
+                                    <button class="project-tag">milligram.io</button>
+                                    <button class="project-tag">JavaScript (ES6)</button>
+                                    <button class="project-tag">Font Awesome</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            OER
+        </div>
+    </div>
+</footer>
+
+<script src="js/index.js"></script>
 </body>
 </html>

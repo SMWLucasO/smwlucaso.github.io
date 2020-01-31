@@ -1,0 +1,120 @@
+:root {
+    --main-color: #9b4dca;
+    --header-textcolor: #fff;
+    --navigation-hover: #944bc3
+
+}
+
+.head {
+    width: 100%;
+    min-height: 240px;
+    background-color: var(--main-color);
+}
+
+.head span,
+.head p,
+.head h1,
+.head h2,
+.head h3,
+.head h4,
+.head h5,
+.head h6 {
+    color: var(--header-textcolor);
+}
+
+.navigation {
+    text-align: right;
+}
+
+button {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+button:hover,
+button:focus {
+    background-color: var(--navigation-hover);
+    border-color: var(--navigation-hover);
+}
+
+.header-container h1 {
+    font-weight: bold;
+
+}
+
+.header-container h2 {
+    font-weight: lighter;
+}
+
+.subtitle {
+    margin-top: -38px;
+}
+
+.socials {
+    margin-top: -10px;
+}
+
+.socials > button, .project-tags > button {
+    padding: revert;
+}
+
+.socials button > i {
+    font-size: 2rem;
+}
+
+.body {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.scroll {
+    text-align: right;
+}
+
+.gallery-item {
+    padding-bottom: 40px;
+}
+
+.project-title {
+    padding-left: 15px;
+    border-left: var(--main-color) 4px solid;
+}
+
+.project-tags > button {
+    width: 2.8rem;
+    height: 2.8rem;
+    line-height: 2.8rem;
+}
+
+footer {
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--header-textcolor);
+}
+
+@media(max-width: 750px) {
+    .scroll {
+        display: none;
+    }
+
+    .column-50 {
+        max-width: 100% !important;
+    }
+
+    .projects {
+        flex-direction: column !important;
+    }
+
+}
+
+@media (max-width: 670px) {
+    .header-container h1 {
+        font-size: 3.6rem;
+    }
+
+    .subtitle {
+        font-size: 2.6rem;
+        margin-top: -28px;
+    }
+
+}
