@@ -33,11 +33,11 @@
         fetch('assets/data/projects.json')
             .then(returned => returned.json())
             .then(outcome => {
-                generateTemplatingForProjects(outcome, generateProjectHTML);
+                generateHTMLFromTemplate(outcome, generateProjectHTML);
             });
     }
 
-    function generateTemplatingForProjects(projectJSONData) {
+    function generateHTMLFromTemplate(projectJSONData) {
         fetch('templates/project.mustache')
             .then(data => data.text())
             .then(template => {

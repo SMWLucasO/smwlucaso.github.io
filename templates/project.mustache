@@ -1,28 +1,24 @@
-<div class="column column-50">
-    <div class="gallery-item active-item">
-        <div class="row">
-            <div class="column">
-                <div class="project-title">
-                    <h4>Github portfolio</h4>
-                </div>
+<div class="column column-50 gallery-item">
+    <div class="row">
+        <div class="column">
+            <div class="project-title">
+                <h4>{{name}}</h4>
             </div>
         </div>
-        <div class="row">
+    </div>
+    <div class="row">
+        <div class="column column-80">
+            <div class="project-description">
+                <p>{{description}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="project-tags">
             <div class="column column-80">
-                <div class="project-description">
-                    <p>Portfolio website built using the milligram CSS framework.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="project-tags">
-                <div class="column column-80">
-                    <button class="project-tag">HTML5</button>
-                    <button class="project-tag">CSS3</button>
-                    <button class="project-tag">milligram.io</button>
-                    <button class="project-tag">JavaScript (ES6)</button>
-                    <button class="project-tag">Font Awesome</button>
-                </div>
+                {{#tags}}
+                    <button class="project-tag">{{.}}</button>
+                {{/tags}}
             </div>
         </div>
     </div>
