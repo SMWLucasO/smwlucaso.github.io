@@ -69,5 +69,4 @@
     }
 
     setupProjects();
-    console.log(currentIndex-2);
 })();
