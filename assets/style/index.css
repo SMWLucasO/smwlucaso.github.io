@@ -92,6 +92,13 @@ footer {
     color: var(--header-textcolor);
 }
 
+
+@media (min-width: 750px) {
+    .gallery-item:not(.active-item) {
+        display: none;
+    }
+}
+
 @media(max-width: 750px) {
     .scroll {
         display: none;

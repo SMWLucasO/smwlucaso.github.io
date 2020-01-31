@@ -2,8 +2,8 @@
   "projects": {
     "Github portfolio": {
       "src": "https://github.com/SMWLucasO/smwlucaso.github.io",
-      "description": "",
-      "tags": ["HTML5", "CSS3", "Milligram.io", "JavaScript (ES6)", "Font Awesome"]
+      "description": "Portfolio website built using the milligram CSS framework.",
+      "tags": ["HTML5", "CSS3", "Milligram.io", "JavaScript (ES6)", "Font Awesome", "Mustache.js"]
     },
     "Network visualizer": {
       "src": "https://github.com/ictm2q-groep-4/nerdygadgets-tool",
