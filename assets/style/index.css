@@ -37,6 +37,10 @@ button:focus {
     border-color: var(--navigation-hover);
 }
 
+a:hover {
+    color: var(--navigation-hover);
+}
+
 .header-container h1 {
     font-weight: bold;
 
@@ -54,7 +58,8 @@ button:focus {
     margin-top: -10px;
 }
 
-.socials > button, .project-tags > button {
+.socials > a > button,
+.project-tags > button {
     padding: revert;
 }
 
